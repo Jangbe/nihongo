@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Kotobas extends Migration
+class Huruf extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class Kotobas extends Migration
      */
     public function up()
     {
-        Schema::create('kotobas', function(Blueprint $table){
+        Schema::create('huruf', function(Blueprint $table){
             $table->id();
             $table->integer('bab');
-            $table->string('huruf', 255);
-            $table->string('kanji', 255);
+            $table->string('hiragana', 255);
+            $table->string('katakana', 255);
             $table->string('romaji', 255);
-            $table->string('arti', 255);
-            $table->string('keterangan', 255);
         });
     }
 
@@ -31,6 +29,6 @@ class Kotobas extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kotobas');
+        Schema::dropIfExists('huruf');
     }
 }
