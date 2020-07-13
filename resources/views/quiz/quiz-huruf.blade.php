@@ -28,8 +28,8 @@
                         <input type="text" name="jawab" class="red-text" data-id="{{ $soal->id }}" data-max="{{ $jml}} " value="{{ $soal->jawab }}" autofocus autocomplete="off">
                     </div>
                     <div class="card-action">
-                        <a href="{{ url('quiz-huruf')."/$prev" }} "><button type="button" class="btn red lighten-2 waves-effect" id="prev">Sebelumnya</button></a>
-                        <button type="submit" class="btn red lighten-2 waves-effect right" id="next">Selanjutnya</button>
+                        <a href="{{ url('quiz-huruf')."/$prev" }} "><button type="button" class="btn red lighten-2 waves-effect" id="prev">Prev</button></a>
+                        <button type="submit" class="btn red lighten-2 waves-effect right" id="next">Next</button>
                     </div>
                 </div>
             </div>
